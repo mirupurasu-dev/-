@@ -1,0 +1,39 @@
+# 競馬予想AI 設定ファイル
+
+data:
+  source: csv              # csv | jvlink
+  csv_dir: sample_data     # CSV Source のルート
+  history_dir: data/odds_history
+
+model:
+  dir: models
+  pace_classifier:
+    num_leaves: 31
+    learning_rate: 0.08
+    n_estimators: 200
+    min_data_in_leaf: 30
+  ranker:
+    num_leaves: 63
+    learning_rate: 0.05
+    n_estimators: 400
+    min_data_in_leaf: 50
+    label_gain: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
+
+betting:
+  ev_threshold: 0.10          # EV > +10% のみ推奨
+  kelly_fraction: 0.25        # 分数ケリー（1/4）
+  stake_cap: 0.05             # 1点あたり資金の5%を上限
+  min_stake: 100              # 競馬の最低単位
+  max_picks: 8                # 1レースあたり最大推奨点数
+  allowed_tickets:            # 許可券種
+    - win          # 単勝
+    - place        # 複勝
+    - quinella     # 馬連
+    - exacta       # 馬単
+    - trio         # 3連複
+    - trifecta     # 3連単
+
+live:
+  interval_sec_default: 10
+  interval_sec_close: 3       # 発走1分前以降はこの間隔
+  close_window_sec: 60

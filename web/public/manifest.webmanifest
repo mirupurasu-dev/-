@@ -1,0 +1,14 @@
+{
+  "name": "KeibaAI",
+  "short_name": "KeibaAI",
+  "description": "競馬予想AI: 確率 × オッズで期待値ベースの買い目",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0d16",
+  "theme_color": "#0b0d16",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "/icon-192.svg", "sizes": "192x192", "type": "image/svg+xml", "purpose": "any maskable" },
+    { "src": "/icon-512.svg", "sizes": "512x512", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

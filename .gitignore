@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.venv/
+venv/
+env/
+ENV/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Type checking
+.mypy_cache/
+.ruff_cache/
+.pytype/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Project data (do not commit)
+data/raw/
+data/interim/
+data/processed/
+data/odds_history/
+models/
+*.parquet
+*.duckdb
+*.sqlite
+*.sqlite3
+sample_data/
+
+# Environment
+.env
+.env.local
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node / Next.js
+web/node_modules/
+web/.next/
+web/out/
+web/.turbo/
+web/coverage/
+web/playwright-report/
+web/test-results/
+web/next-env.d.ts
+
+# Logs
+*.log
+logs/

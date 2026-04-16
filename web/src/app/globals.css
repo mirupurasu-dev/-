@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 0 0% 100%;
+  --fg: 222 25% 12%;
+  --muted: 220 14% 96%;
+  --muted-fg: 220 10% 45%;
+  --card: 0 0% 100%;
+  --card-fg: 222 25% 12%;
+  --border: 220 14% 90%;
+  --accent: 250 80% 60%;
+  --accent-fg: 0 0% 100%;
+  --success: 152 60% 45%;
+  --warning: 38 92% 50%;
+  --danger: 0 84% 60%;
+  --font-sans: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", system-ui, sans-serif;
+}
+
+.dark, :root[data-theme="dark"] {
+  --bg: 222 25% 7%;
+  --fg: 220 15% 94%;
+  --muted: 222 20% 13%;
+  --muted-fg: 220 10% 65%;
+  --card: 222 22% 10%;
+  --card-fg: 220 15% 94%;
+  --border: 222 15% 20%;
+  --accent: 260 85% 70%;
+  --accent-fg: 0 0% 100%;
+  --success: 152 65% 55%;
+  --warning: 38 95% 60%;
+  --danger: 0 84% 65%;
+}
+
+html, body {
+  background-color: hsl(var(--bg));
+  color: hsl(var(--fg));
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100dvh;
+}
+
+/* Safe area for iOS notch */
+.safe-top { padding-top: env(safe-area-inset-top); }
+.safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
+
+/* Tabular figures for numbers */
+.tabular { font-variant-numeric: tabular-nums; }
+
+/* Hide scrollbars in horizontal scroll areas */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
