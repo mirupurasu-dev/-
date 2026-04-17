@@ -86,3 +86,33 @@ export interface RecommendResponse {
   recommendation: RaceRecommendation;
   odds_ts: string | null;
 }
+
+export interface SignalStat {
+  name: string;
+  n_races: number;
+  mean_ic: number;
+  std_ic: number;
+  icir: number;
+  t_stat: number;
+  p_value: number;
+  ndcg3: number;
+  win_logloss: number;
+  weight: number;
+}
+
+export interface BacktestSummary {
+  total_stake: number;
+  total_payout: number;
+  roi: number;
+  hit_rate: number;
+  hit_pick_rate: number;
+  n_races: number;
+  n_picks: number;
+}
+
+export interface BacktestResponse {
+  folds: Array<{ train_end: string; test_start: string; test_end: string; n_train_races: number; n_test_races: number }>;
+  summary: BacktestSummary;
+  by_ticket: Record<string, { picks: number; hits: number; hit_rate: number; stake: number; payout: number; roi: number }>;
+  per_race_pl_sample: Array<{ race_id: string; stake: number; payout: number; pl: number; hit: boolean }>;
+}

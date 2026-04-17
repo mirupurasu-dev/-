@@ -10,6 +10,8 @@ import pandas as pd
 from fastapi import FastAPI, HTTPException, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
 
+from ..backtest.signals import analyze_signals_from_source
+from ..backtest.walkforward import walk_forward_backtest
 from ..betting.odds_poller import MockOddsBackend, poll_odds
 from ..betting.odds_stream import stream
 from ..betting.recommender import enumerate_all_tickets
@@ -237,6 +239,69 @@ async def stop_live(race_id: str):
     if stop:
         stop.set()
     return {"status": "stopped"}
+
+
+_analyze_cache: dict[str, dict] = {}
+
+
+@app.get("/api/analyze/signals")
+async def analyze_signals_api(refresh: bool = False):
+    """各シグナルの IC/ICIR/t統計 などを返す. キャッシュ付き."""
+    cfg = _load_cfg()
+    key = f"signals:{cfg.data.csv_dir}"
+    if not refresh and key in _analyze_cache:
+        return _analyze_cache[key]
+    src = CsvDataSource(cfg.data.csv_dir)
+    stats_list = await asyncio.to_thread(analyze_signals_from_source, src)
+    payload = {"signals": [s.to_dict() for s in stats_list]}
+    _analyze_cache[key] = payload
+    return payload
+
+
+@app.get("/api/analyze/backtest")
+async def analyze_backtest_api(
+    n_folds: int = 3,
+    min_train_races: int = 300,
+    budget: int = 10000,
+    tickets: str = "win,place",
+    refresh: bool = False,
+):
+    cfg = _load_cfg()
+    key = f"bt:{cfg.data.csv_dir}:{n_folds}:{min_train_races}:{budget}:{tickets}"
+    if not refresh and key in _analyze_cache:
+        return _analyze_cache[key]
+    src = CsvDataSource(cfg.data.csv_dir)
+    allowed = [t.strip() for t in tickets.split(",") if t.strip()]
+    folds, result = await asyncio.to_thread(
+        walk_forward_backtest, src, cfg,
+        n_folds=n_folds, min_train_races=min_train_races,
+        allowed_tickets=allowed, budget=budget,
+    )
+    payload = {
+        "folds": [
+            {
+                "train_end": f.train_end.isoformat(),
+                "test_start": f.test_start.isoformat(),
+                "test_end": f.test_end.isoformat(),
+                "n_train_races": f.n_train_races,
+                "n_test_races": f.n_test_races,
+            }
+            for f in folds
+        ],
+        "summary": {
+            "total_stake": result.total_stake,
+            "total_payout": result.total_payout,
+            "roi": result.roi,
+            "hit_rate": result.hit_rate,
+            "hit_pick_rate": result.hit_pick_rate,
+            "n_races": result.n_races,
+            "n_picks": result.n_picks,
+        },
+        "by_ticket": result.by_ticket,
+        "per_race_pl_sample": result.per_race_pl[:200],
+    }
+    _analyze_cache[key] = payload
+    return payload
 
 
 @app.websocket("/ws/live/{race_id}")

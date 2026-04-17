@@ -11,6 +11,8 @@ from rich.console import Console
 from rich.table import Table
 
 from ..api.app import _build_base_odds_from_csv
+from ..backtest.signals import analyze_signals_from_source
+from ..backtest.walkforward import walk_forward_backtest
 from ..betting.odds_poller import MockOddsBackend, poll_odds
 from ..betting.odds_stream import OddsStream
 from ..config import load_config
@@ -18,6 +20,8 @@ from ..data.csv_source import CsvDataSource
 from ..service import PredictionService
 
 app = typer.Typer(add_completion=False, help="競馬予想AI CLI")
+analyze_app = typer.Typer(help="シグナル分析・バックテスト")
+app.add_typer(analyze_app, name="analyze")
 console = Console()
 
 
@@ -171,6 +175,112 @@ def json_predict(
     svc.load(model_dir)
     pred = svc.predict_race(race_id)
     print(json.dumps(pred.model_dump(mode="json"), ensure_ascii=False, default=str))
+
+
+@analyze_app.command("signals")
+def analyze_signals(
+    config: Path = typer.Option(Path("config/config.yaml")),
+    top: int = typer.Option(15, help="上位N件を表示"),
+    json_out: bool = typer.Option(False, "--json", help="JSONで出力"),
+):
+    """過去データから各シグナルの予測力 (IC, ICIR, t統計, NDCG@3) を算出."""
+    cfg = load_config(config)
+    src = CsvDataSource(cfg.data.csv_dir)
+    rprint("[bold]シグナル分析開始…[/bold]")
+    stats_list = analyze_signals_from_source(src)
+    if json_out:
+        print(json.dumps([s.to_dict() for s in stats_list], ensure_ascii=False, indent=2))
+        return
+    rprint(f"[green]分析完了[/green]: {len(stats_list)} signals across races")
+    table = Table(title="シグナル優位性 (|IC| 降順)")
+    table.add_column("#", justify="right")
+    table.add_column("シグナル")
+    table.add_column("平均IC", justify="right")
+    table.add_column("ICIR", justify="right")
+    table.add_column("t統計", justify="right")
+    table.add_column("p値", justify="right")
+    table.add_column("NDCG@3", justify="right")
+    table.add_column("Win-LL", justify="right")
+    table.add_column("推奨重み", justify="right")
+    for i, s in enumerate(stats_list[:top], start=1):
+        sig = "[green]" if s.mean_ic > 0 else "[red]"
+        end = "[/]"
+        table.add_row(
+            str(i), s.name,
+            f"{sig}{s.mean_ic:+.4f}{end}",
+            f"{s.icir:+.2f}",
+            f"{s.t_stat:+.2f}",
+            f"{s.p_value:.3f}",
+            f"{s.ndcg3:.3f}",
+            f"{s.win_logloss:.3f}",
+            f"{s.weight:+.3f}",
+        )
+    console.print(table)
+
+
+@analyze_app.command("backtest")
+def analyze_backtest(
+    config: Path = typer.Option(Path("config/config.yaml")),
+    n_folds: int = typer.Option(3, help="分割数"),
+    min_train_races: int = typer.Option(300, help="最低学習レース数"),
+    budget: int = typer.Option(10000, help="1レースあたり予算(円)"),
+    tickets: str = typer.Option("win,place", help="使用券種（カンマ区切り）"),
+    json_out: bool = typer.Option(False, "--json"),
+):
+    """Walk-forward で学習→買い目→払戻しをシミュレーション. 回収率・的中率を算出."""
+    cfg = load_config(config)
+    src = CsvDataSource(cfg.data.csv_dir)
+    allowed = [t.strip() for t in tickets.split(",") if t.strip()]
+    rprint(f"[bold]Walk-forward バックテスト開始…[/bold] folds={n_folds} tickets={allowed}")
+    folds, result = walk_forward_backtest(
+        src, cfg, n_folds=n_folds, min_train_races=min_train_races,
+        allowed_tickets=allowed, budget=budget,
+    )
+    if json_out:
+        print(json.dumps({
+            "folds": [{"train_end": f.train_end.isoformat(), "n_train": f.n_train_races,
+                        "test_start": f.test_start.isoformat(), "test_end": f.test_end.isoformat(),
+                        "n_test": f.n_test_races} for f in folds],
+            "summary": {
+                "total_stake": result.total_stake,
+                "total_payout": result.total_payout,
+                "roi": result.roi,
+                "hit_rate": result.hit_rate,
+                "hit_pick_rate": result.hit_pick_rate,
+                "n_races": result.n_races,
+                "n_picks": result.n_picks,
+            },
+            "by_ticket": result.by_ticket,
+        }, ensure_ascii=False, indent=2, default=str))
+        return
+
+    rprint(f"[green]結果[/green]")
+    rprint(f"  参加レース: {result.n_races}, 買い目数: {result.n_picks}")
+    rprint(f"  合計ベット: {result.total_stake:,}円")
+    rprint(f"  合計払戻:   {result.total_payout:,}円")
+    rprint(f"  [bold]回収率: {result.roi*100:.1f}%[/bold]  P&L: {result.total_payout - result.total_stake:+,}円")
+    rprint(f"  レース的中率: {result.hit_rate*100:.1f}%")
+    rprint(f"  買い目的中率: {result.hit_pick_rate*100:.1f}%")
+    rprint()
+    table = Table(title="券種別")
+    table.add_column("券種")
+    table.add_column("買目数", justify="right")
+    table.add_column("的中", justify="right")
+    table.add_column("的中率", justify="right")
+    table.add_column("ベット", justify="right")
+    table.add_column("払戻", justify="right")
+    table.add_column("回収率", justify="right")
+    for t, v in result.by_ticket.items():
+        roi_pct = v["roi"] * 100
+        color = "[green]" if roi_pct >= 100 else "[yellow]" if roi_pct >= 80 else "[red]"
+        table.add_row(
+            t, str(v["picks"]), str(v["hits"]),
+            f"{v['hit_rate']*100:.1f}%",
+            f"{v['stake']:,}",
+            f"{v['payout']:,}",
+            f"{color}{roi_pct:.1f}%[/]",
+        )
+    console.print(table)
 
 
 if __name__ == "__main__":

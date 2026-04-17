@@ -7,7 +7,7 @@ import { cn } from '@/lib/cn';
 
 const items = [
   { href: '/', label: 'ホーム', icon: Home },
-  { href: '/backtest', label: 'バックテスト', icon: BarChart3 },
+  { href: '/analyze', label: '分析', icon: BarChart3 },
   { href: '/bankroll', label: '資金', icon: Wallet },
   { href: '/settings', label: '設定', icon: Settings },
 ];
