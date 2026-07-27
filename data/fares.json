@@ -1,0 +1,2842 @@
+{
+  "generated_at": "2026-07-27",
+  "currency": "JPY",
+  "note": "サンプルデータです。実際の運賃APIに接続していません。",
+  "routes": [
+    {
+      "id": "NRT-YVR",
+      "region": "north_america",
+      "region_label": "北米",
+      "origin": "NRT",
+      "origin_name": "東京(成田)",
+      "dest": "YVR",
+      "dest_name": "バンクーバー",
+      "dest_name_en": "Vancouver",
+      "airlines": [
+        "エア・カナダ",
+        "ANA"
+      ],
+      "current_price": 65700,
+      "historical_avg": 100239,
+      "historical_min": 91800,
+      "historical_max": 127500,
+      "discount_vs_avg_pct": 34.5,
+      "is_deal": true,
+      "history": [
+        {
+          "month": "2024-08",
+          "price": 127500
+        },
+        {
+          "month": "2024-09",
+          "price": 99000
+        },
+        {
+          "month": "2024-10",
+          "price": 99200
+        },
+        {
+          "month": "2024-11",
+          "price": 97900
+        },
+        {
+          "month": "2024-12",
+          "price": 98700
+        },
+        {
+          "month": "2025-01",
+          "price": 98500
+        },
+        {
+          "month": "2025-02",
+          "price": 96100
+        },
+        {
+          "month": "2025-03",
+          "price": 95500
+        },
+        {
+          "month": "2025-04",
+          "price": 95800
+        },
+        {
+          "month": "2025-05",
+          "price": 98600
+        },
+        {
+          "month": "2025-06",
+          "price": 99500
+        },
+        {
+          "month": "2025-07",
+          "price": 126200
+        },
+        {
+          "month": "2025-08",
+          "price": 126500
+        },
+        {
+          "month": "2025-09",
+          "price": 99400
+        },
+        {
+          "month": "2025-10",
+          "price": 96800
+        },
+        {
+          "month": "2025-11",
+          "price": 94300
+        },
+        {
+          "month": "2025-12",
+          "price": 95000
+        },
+        {
+          "month": "2026-01",
+          "price": 94700
+        },
+        {
+          "month": "2026-02",
+          "price": 92900
+        },
+        {
+          "month": "2026-03",
+          "price": 91800
+        },
+        {
+          "month": "2026-04",
+          "price": 92000
+        },
+        {
+          "month": "2026-05",
+          "price": 93800
+        },
+        {
+          "month": "2026-06",
+          "price": 95800
+        },
+        {
+          "month": "2026-07",
+          "price": 65700
+        }
+      ]
+    },
+    {
+      "id": "HND-LAX",
+      "region": "north_america",
+      "region_label": "北米",
+      "origin": "HND",
+      "origin_name": "東京(羽田)",
+      "dest": "LAX",
+      "dest_name": "ロサンゼルス",
+      "dest_name_en": "Los Angeles",
+      "airlines": [
+        "ANA",
+        "JAL",
+        "ユナイテッド航空"
+      ],
+      "current_price": 66800,
+      "historical_avg": 100465,
+      "historical_min": 92000,
+      "historical_max": 122700,
+      "discount_vs_avg_pct": 33.5,
+      "is_deal": true,
+      "history": [
+        {
+          "month": "2024-08",
+          "price": 120800
+        },
+        {
+          "month": "2024-09",
+          "price": 98800
+        },
+        {
+          "month": "2024-10",
+          "price": 100700
+        },
+        {
+          "month": "2024-11",
+          "price": 100100
+        },
+        {
+          "month": "2024-12",
+          "price": 122700
+        },
+        {
+          "month": "2025-01",
+          "price": 96700
+        },
+        {
+          "month": "2025-02",
+          "price": 94000
+        },
+        {
+          "month": "2025-03",
+          "price": 94600
+        },
+        {
+          "month": "2025-04",
+          "price": 93800
+        },
+        {
+          "month": "2025-05",
+          "price": 92000
+        },
+        {
+          "month": "2025-06",
+          "price": 92500
+        },
+        {
+          "month": "2025-07",
+          "price": 115800
+        },
+        {
+          "month": "2025-08",
+          "price": 114900
+        },
+        {
+          "month": "2025-09",
+          "price": 93000
+        },
+        {
+          "month": "2025-10",
+          "price": 94500
+        },
+        {
+          "month": "2025-11",
+          "price": 94700
+        },
+        {
+          "month": "2025-12",
+          "price": 121300
+        },
+        {
+          "month": "2026-01",
+          "price": 95900
+        },
+        {
+          "month": "2026-02",
+          "price": 94300
+        },
+        {
+          "month": "2026-03",
+          "price": 93800
+        },
+        {
+          "month": "2026-04",
+          "price": 96400
+        },
+        {
+          "month": "2026-05",
+          "price": 94000
+        },
+        {
+          "month": "2026-06",
+          "price": 95400
+        },
+        {
+          "month": "2026-07",
+          "price": 66800
+        }
+      ]
+    },
+    {
+      "id": "NRT-HAN",
+      "region": "asia",
+      "region_label": "アジア",
+      "origin": "NRT",
+      "origin_name": "東京(成田)",
+      "dest": "HAN",
+      "dest_name": "ハノイ",
+      "dest_name_en": "Hanoi",
+      "airlines": [
+        "ベトナム航空",
+        "ANA"
+      ],
+      "current_price": 45200,
+      "historical_avg": 47665,
+      "historical_min": 25000,
+      "historical_max": 60700,
+      "discount_vs_avg_pct": 5.2,
+      "is_deal": false,
+      "history": [
+        {
+          "month": "2024-08",
+          "price": 46400
+        },
+        {
+          "month": "2024-09",
+          "price": 46200
+        },
+        {
+          "month": "2024-10",
+          "price": 47300
+        },
+        {
+          "month": "2024-11",
+          "price": 48300
+        },
+        {
+          "month": "2024-12",
+          "price": 60700
+        },
+        {
+          "month": "2025-01",
+          "price": 59400
+        },
+        {
+          "month": "2025-02",
+          "price": 47600
+        },
+        {
+          "month": "2025-03",
+          "price": 46200
+        },
+        {
+          "month": "2025-04",
+          "price": 45500
+        },
+        {
+          "month": "2025-05",
+          "price": 46200
+        },
+        {
+          "month": "2025-06",
+          "price": 46200
+        },
+        {
+          "month": "2025-07",
+          "price": 45300
+        },
+        {
+          "month": "2025-08",
+          "price": 44700
+        },
+        {
+          "month": "2025-09",
+          "price": 44800
+        },
+        {
+          "month": "2025-10",
+          "price": 45600
+        },
+        {
+          "month": "2025-11",
+          "price": 25000
+        },
+        {
+          "month": "2025-12",
+          "price": 58300
+        },
+        {
+          "month": "2026-01",
+          "price": 58400
+        },
+        {
+          "month": "2026-02",
+          "price": 47700
+        },
+        {
+          "month": "2026-03",
+          "price": 46500
+        },
+        {
+          "month": "2026-04",
+          "price": 47700
+        },
+        {
+          "month": "2026-05",
+          "price": 46800
+        },
+        {
+          "month": "2026-06",
+          "price": 45500
+        },
+        {
+          "month": "2026-07",
+          "price": 45200
+        }
+      ]
+    },
+    {
+      "id": "NRT-AKL",
+      "region": "oceania",
+      "region_label": "オセアニア",
+      "origin": "NRT",
+      "origin_name": "東京(成田)",
+      "dest": "AKL",
+      "dest_name": "オークランド",
+      "dest_name_en": "Auckland",
+      "airlines": [
+        "ニュージーランド航空"
+      ],
+      "current_price": 105700,
+      "historical_avg": 109700,
+      "historical_min": 60500,
+      "historical_max": 141000,
+      "discount_vs_avg_pct": 3.6,
+      "is_deal": false,
+      "history": [
+        {
+          "month": "2024-08",
+          "price": 107500
+        },
+        {
+          "month": "2024-09",
+          "price": 60500
+        },
+        {
+          "month": "2024-10",
+          "price": 108500
+        },
+        {
+          "month": "2024-11",
+          "price": 107300
+        },
+        {
+          "month": "2024-12",
+          "price": 133800
+        },
+        {
+          "month": "2025-01",
+          "price": 133500
+        },
+        {
+          "month": "2025-02",
+          "price": 109100
+        },
+        {
+          "month": "2025-03",
+          "price": 106100
+        },
+        {
+          "month": "2025-04",
+          "price": 109200
+        },
+        {
+          "month": "2025-05",
+          "price": 109200
+        },
+        {
+          "month": "2025-06",
+          "price": 106500
+        },
+        {
+          "month": "2025-07",
+          "price": 109500
+        },
+        {
+          "month": "2025-08",
+          "price": 111500
+        },
+        {
+          "month": "2025-09",
+          "price": 112000
+        },
+        {
+          "month": "2025-10",
+          "price": 114400
+        },
+        {
+          "month": "2025-11",
+          "price": 62700
+        },
+        {
+          "month": "2025-12",
+          "price": 140700
+        },
+        {
+          "month": "2026-01",
+          "price": 141000
+        },
+        {
+          "month": "2026-02",
+          "price": 110200
+        },
+        {
+          "month": "2026-03",
+          "price": 107000
+        },
+        {
+          "month": "2026-04",
+          "price": 108500
+        },
+        {
+          "month": "2026-05",
+          "price": 107800
+        },
+        {
+          "month": "2026-06",
+          "price": 106600
+        },
+        {
+          "month": "2026-07",
+          "price": 105700
+        }
+      ]
+    },
+    {
+      "id": "NRT-BKK",
+      "region": "asia",
+      "region_label": "アジア",
+      "origin": "NRT",
+      "origin_name": "東京(成田)",
+      "dest": "BKK",
+      "dest_name": "バンコク",
+      "dest_name_en": "Bangkok",
+      "airlines": [
+        "タイ国際航空",
+        "ANA",
+        "JAL"
+      ],
+      "current_price": 57000,
+      "historical_avg": 57252,
+      "historical_min": 51700,
+      "historical_max": 69900,
+      "discount_vs_avg_pct": 0.4,
+      "is_deal": false,
+      "history": [
+        {
+          "month": "2024-08",
+          "price": 51700
+        },
+        {
+          "month": "2024-09",
+          "price": 52800
+        },
+        {
+          "month": "2024-10",
+          "price": 52500
+        },
+        {
+          "month": "2024-11",
+          "price": 53500
+        },
+        {
+          "month": "2024-12",
+          "price": 66600
+        },
+        {
+          "month": "2025-01",
+          "price": 65700
+        },
+        {
+          "month": "2025-02",
+          "price": 54100
+        },
+        {
+          "month": "2025-03",
+          "price": 53900
+        },
+        {
+          "month": "2025-04",
+          "price": 67700
+        },
+        {
+          "month": "2025-05",
+          "price": 52600
+        },
+        {
+          "month": "2025-06",
+          "price": 51800
+        },
+        {
+          "month": "2025-07",
+          "price": 53000
+        },
+        {
+          "month": "2025-08",
+          "price": 54000
+        },
+        {
+          "month": "2025-09",
+          "price": 53000
+        },
+        {
+          "month": "2025-10",
+          "price": 52600
+        },
+        {
+          "month": "2025-11",
+          "price": 52300
+        },
+        {
+          "month": "2025-12",
+          "price": 66400
+        },
+        {
+          "month": "2026-01",
+          "price": 68200
+        },
+        {
+          "month": "2026-02",
+          "price": 55700
+        },
+        {
+          "month": "2026-03",
+          "price": 56600
+        },
+        {
+          "month": "2026-04",
+          "price": 69900
+        },
+        {
+          "month": "2026-05",
+          "price": 55800
+        },
+        {
+          "month": "2026-06",
+          "price": 56400
+        },
+        {
+          "month": "2026-07",
+          "price": 57000
+        }
+      ]
+    },
+    {
+      "id": "NRT-MNL",
+      "region": "asia",
+      "region_label": "アジア",
+      "origin": "NRT",
+      "origin_name": "東京(成田)",
+      "dest": "MNL",
+      "dest_name": "マニラ",
+      "dest_name_en": "Manila",
+      "airlines": [
+        "フィリピン航空",
+        "セブパシフィック航空"
+      ],
+      "current_price": 52200,
+      "historical_avg": 51000,
+      "historical_min": 27200,
+      "historical_max": 67000,
+      "discount_vs_avg_pct": -2.4,
+      "is_deal": false,
+      "history": [
+        {
+          "month": "2024-08",
+          "price": 48600
+        },
+        {
+          "month": "2024-09",
+          "price": 48900
+        },
+        {
+          "month": "2024-10",
+          "price": 49000
+        },
+        {
+          "month": "2024-11",
+          "price": 49100
+        },
+        {
+          "month": "2024-12",
+          "price": 61400
+        },
+        {
+          "month": "2025-01",
+          "price": 27200
+        },
+        {
+          "month": "2025-02",
+          "price": 50200
+        },
+        {
+          "month": "2025-03",
+          "price": 51500
+        },
+        {
+          "month": "2025-04",
+          "price": 64200
+        },
+        {
+          "month": "2025-05",
+          "price": 51500
+        },
+        {
+          "month": "2025-06",
+          "price": 51200
+        },
+        {
+          "month": "2025-07",
+          "price": 50100
+        },
+        {
+          "month": "2025-08",
+          "price": 50000
+        },
+        {
+          "month": "2025-09",
+          "price": 49700
+        },
+        {
+          "month": "2025-10",
+          "price": 49700
+        },
+        {
+          "month": "2025-11",
+          "price": 49800
+        },
+        {
+          "month": "2025-12",
+          "price": 64000
+        },
+        {
+          "month": "2026-01",
+          "price": 28700
+        },
+        {
+          "month": "2026-02",
+          "price": 52000
+        },
+        {
+          "month": "2026-03",
+          "price": 52700
+        },
+        {
+          "month": "2026-04",
+          "price": 67000
+        },
+        {
+          "month": "2026-05",
+          "price": 53100
+        },
+        {
+          "month": "2026-06",
+          "price": 53400
+        },
+        {
+          "month": "2026-07",
+          "price": 52200
+        }
+      ]
+    },
+    {
+      "id": "NRT-DPS",
+      "region": "asia",
+      "region_label": "アジア",
+      "origin": "NRT",
+      "origin_name": "東京(成田)",
+      "dest": "DPS",
+      "dest_name": "デンパサール(バリ)",
+      "dest_name_en": "Bali (Denpasar)",
+      "airlines": [
+        "ガルーダ・インドネシア航空",
+        "JAL"
+      ],
+      "current_price": 82100,
+      "historical_avg": 75391,
+      "historical_min": 65500,
+      "historical_max": 96900,
+      "discount_vs_avg_pct": -8.9,
+      "is_deal": false,
+      "history": [
+        {
+          "month": "2024-08",
+          "price": 94900
+        },
+        {
+          "month": "2024-09",
+          "price": 77200
+        },
+        {
+          "month": "2024-10",
+          "price": 79300
+        },
+        {
+          "month": "2024-11",
+          "price": 78400
+        },
+        {
+          "month": "2024-12",
+          "price": 96900
+        },
+        {
+          "month": "2025-01",
+          "price": 75700
+        },
+        {
+          "month": "2025-02",
+          "price": 74600
+        },
+        {
+          "month": "2025-03",
+          "price": 73700
+        },
+        {
+          "month": "2025-04",
+          "price": 73900
+        },
+        {
+          "month": "2025-05",
+          "price": 72100
+        },
+        {
+          "month": "2025-06",
+          "price": 70100
+        },
+        {
+          "month": "2025-07",
+          "price": 87700
+        },
+        {
+          "month": "2025-08",
+          "price": 88600
+        },
+        {
+          "month": "2025-09",
+          "price": 70200
+        },
+        {
+          "month": "2025-10",
+          "price": 69000
+        },
+        {
+          "month": "2025-11",
+          "price": 67300
+        },
+        {
+          "month": "2025-12",
+          "price": 82900
+        },
+        {
+          "month": "2026-01",
+          "price": 67000
+        },
+        {
+          "month": "2026-02",
+          "price": 67300
+        },
+        {
+          "month": "2026-03",
+          "price": 67600
+        },
+        {
+          "month": "2026-04",
+          "price": 66600
+        },
+        {
+          "month": "2026-05",
+          "price": 67500
+        },
+        {
+          "month": "2026-06",
+          "price": 65500
+        },
+        {
+          "month": "2026-07",
+          "price": 82100
+        }
+      ]
+    },
+    {
+      "id": "NRT-HNL",
+      "region": "north_america",
+      "region_label": "北米",
+      "origin": "NRT",
+      "origin_name": "東京(成田)",
+      "dest": "HNL",
+      "dest_name": "ホノルル",
+      "dest_name_en": "Honolulu",
+      "airlines": [
+        "ハワイアン航空",
+        "JAL",
+        "ANA"
+      ],
+      "current_price": 84700,
+      "historical_avg": 76417,
+      "historical_min": 50100,
+      "historical_max": 95200,
+      "discount_vs_avg_pct": -10.8,
+      "is_deal": false,
+      "history": [
+        {
+          "month": "2024-08",
+          "price": 95200
+        },
+        {
+          "month": "2024-09",
+          "price": 75700
+        },
+        {
+          "month": "2024-10",
+          "price": 76100
+        },
+        {
+          "month": "2024-11",
+          "price": 74600
+        },
+        {
+          "month": "2024-12",
+          "price": 91000
+        },
+        {
+          "month": "2025-01",
+          "price": 92700
+        },
+        {
+          "month": "2025-02",
+          "price": 72400
+        },
+        {
+          "month": "2025-03",
+          "price": 72400
+        },
+        {
+          "month": "2025-04",
+          "price": 73200
+        },
+        {
+          "month": "2025-05",
+          "price": 72300
+        },
+        {
+          "month": "2025-06",
+          "price": 72000
+        },
+        {
+          "month": "2025-07",
+          "price": 87500
+        },
+        {
+          "month": "2025-08",
+          "price": 89300
+        },
+        {
+          "month": "2025-09",
+          "price": 71600
+        },
+        {
+          "month": "2025-10",
+          "price": 71000
+        },
+        {
+          "month": "2025-11",
+          "price": 70900
+        },
+        {
+          "month": "2025-12",
+          "price": 50100
+        },
+        {
+          "month": "2026-01",
+          "price": 91800
+        },
+        {
+          "month": "2026-02",
+          "price": 73400
+        },
+        {
+          "month": "2026-03",
+          "price": 71400
+        },
+        {
+          "month": "2026-04",
+          "price": 72600
+        },
+        {
+          "month": "2026-05",
+          "price": 70700
+        },
+        {
+          "month": "2026-06",
+          "price": 69700
+        },
+        {
+          "month": "2026-07",
+          "price": 84700
+        }
+      ]
+    },
+    {
+      "id": "HND-LHR",
+      "region": "europe",
+      "region_label": "欧州",
+      "origin": "HND",
+      "origin_name": "東京(羽田)",
+      "dest": "LHR",
+      "dest_name": "ロンドン",
+      "dest_name_en": "London",
+      "airlines": [
+        "ANA",
+        "JAL",
+        "ブリティッシュ・エアウェイズ"
+      ],
+      "current_price": 135700,
+      "historical_avg": 121122,
+      "historical_min": 67700,
+      "historical_max": 160200,
+      "discount_vs_avg_pct": -12.0,
+      "is_deal": false,
+      "history": [
+        {
+          "month": "2024-08",
+          "price": 160200
+        },
+        {
+          "month": "2024-09",
+          "price": 128000
+        },
+        {
+          "month": "2024-10",
+          "price": 131000
+        },
+        {
+          "month": "2024-11",
+          "price": 127800
+        },
+        {
+          "month": "2024-12",
+          "price": 158100
+        },
+        {
+          "month": "2025-01",
+          "price": 67700
+        },
+        {
+          "month": "2025-02",
+          "price": 119900
+        },
+        {
+          "month": "2025-03",
+          "price": 118600
+        },
+        {
+          "month": "2025-04",
+          "price": 118100
+        },
+        {
+          "month": "2025-05",
+          "price": 116900
+        },
+        {
+          "month": "2025-06",
+          "price": 113900
+        },
+        {
+          "month": "2025-07",
+          "price": 141500
+        },
+        {
+          "month": "2025-08",
+          "price": 140600
+        },
+        {
+          "month": "2025-09",
+          "price": 114600
+        },
+        {
+          "month": "2025-10",
+          "price": 115500
+        },
+        {
+          "month": "2025-11",
+          "price": 113900
+        },
+        {
+          "month": "2025-12",
+          "price": 139500
+        },
+        {
+          "month": "2026-01",
+          "price": 108400
+        },
+        {
+          "month": "2026-02",
+          "price": 108400
+        },
+        {
+          "month": "2026-03",
+          "price": 111000
+        },
+        {
+          "month": "2026-04",
+          "price": 110700
+        },
+        {
+          "month": "2026-05",
+          "price": 110200
+        },
+        {
+          "month": "2026-06",
+          "price": 111300
+        },
+        {
+          "month": "2026-07",
+          "price": 135700
+        }
+      ]
+    },
+    {
+      "id": "NRT-DXB",
+      "region": "middle_east",
+      "region_label": "中東",
+      "origin": "NRT",
+      "origin_name": "東京(成田)",
+      "dest": "DXB",
+      "dest_name": "ドバイ",
+      "dest_name_en": "Dubai",
+      "airlines": [
+        "エミレーツ航空"
+      ],
+      "current_price": 112600,
+      "historical_avg": 97135,
+      "historical_min": 52700,
+      "historical_max": 122700,
+      "discount_vs_avg_pct": -15.9,
+      "is_deal": false,
+      "history": [
+        {
+          "month": "2024-08",
+          "price": 96500
+        },
+        {
+          "month": "2024-09",
+          "price": 97000
+        },
+        {
+          "month": "2024-10",
+          "price": 99600
+        },
+        {
+          "month": "2024-11",
+          "price": 97600
+        },
+        {
+          "month": "2024-12",
+          "price": 122700
+        },
+        {
+          "month": "2025-01",
+          "price": 67300
+        },
+        {
+          "month": "2025-02",
+          "price": 96100
+        },
+        {
+          "month": "2025-03",
+          "price": 98600
+        },
+        {
+          "month": "2025-04",
+          "price": 52700
+        },
+        {
+          "month": "2025-05",
+          "price": 94700
+        },
+        {
+          "month": "2025-06",
+          "price": 94600
+        },
+        {
+          "month": "2025-07",
+          "price": 120700
+        },
+        {
+          "month": "2025-08",
+          "price": 98100
+        },
+        {
+          "month": "2025-09",
+          "price": 96500
+        },
+        {
+          "month": "2025-10",
+          "price": 96900
+        },
+        {
+          "month": "2025-11",
+          "price": 94100
+        },
+        {
+          "month": "2025-12",
+          "price": 119900
+        },
+        {
+          "month": "2026-01",
+          "price": 122000
+        },
+        {
+          "month": "2026-02",
+          "price": 96500
+        },
+        {
+          "month": "2026-03",
+          "price": 94000
+        },
+        {
+          "month": "2026-04",
+          "price": 93300
+        },
+        {
+          "month": "2026-05",
+          "price": 93500
+        },
+        {
+          "month": "2026-06",
+          "price": 91200
+        },
+        {
+          "month": "2026-07",
+          "price": 112600
+        }
+      ]
+    },
+    {
+      "id": "NRT-CAI",
+      "region": "africa",
+      "region_label": "アフリカ",
+      "origin": "NRT",
+      "origin_name": "東京(成田)",
+      "dest": "CAI",
+      "dest_name": "カイロ",
+      "dest_name_en": "Cairo",
+      "airlines": [
+        "エジプト航空",
+        "カタール航空"
+      ],
+      "current_price": 153500,
+      "historical_avg": 131300,
+      "historical_min": 68800,
+      "historical_max": 172000,
+      "discount_vs_avg_pct": -16.9,
+      "is_deal": false,
+      "history": [
+        {
+          "month": "2024-08",
+          "price": 94100
+        },
+        {
+          "month": "2024-09",
+          "price": 132800
+        },
+        {
+          "month": "2024-10",
+          "price": 129700
+        },
+        {
+          "month": "2024-11",
+          "price": 133400
+        },
+        {
+          "month": "2024-12",
+          "price": 168000
+        },
+        {
+          "month": "2025-01",
+          "price": 134100
+        },
+        {
+          "month": "2025-02",
+          "price": 135800
+        },
+        {
+          "month": "2025-03",
+          "price": 132500
+        },
+        {
+          "month": "2025-04",
+          "price": 136400
+        },
+        {
+          "month": "2025-05",
+          "price": 136300
+        },
+        {
+          "month": "2025-06",
+          "price": 137000
+        },
+        {
+          "month": "2025-07",
+          "price": 167300
+        },
+        {
+          "month": "2025-08",
+          "price": 172000
+        },
+        {
+          "month": "2025-09",
+          "price": 134000
+        },
+        {
+          "month": "2025-10",
+          "price": 137100
+        },
+        {
+          "month": "2025-11",
+          "price": 74200
+        },
+        {
+          "month": "2025-12",
+          "price": 164700
+        },
+        {
+          "month": "2026-01",
+          "price": 127900
+        },
+        {
+          "month": "2026-02",
+          "price": 68800
+        },
+        {
+          "month": "2026-03",
+          "price": 126000
+        },
+        {
+          "month": "2026-04",
+          "price": 126000
+        },
+        {
+          "month": "2026-05",
+          "price": 126900
+        },
+        {
+          "month": "2026-06",
+          "price": 124900
+        },
+        {
+          "month": "2026-07",
+          "price": 153500
+        }
+      ]
+    },
+    {
+      "id": "HND-SYD",
+      "region": "oceania",
+      "region_label": "オセアニア",
+      "origin": "HND",
+      "origin_name": "東京(羽田)",
+      "dest": "SYD",
+      "dest_name": "シドニー",
+      "dest_name_en": "Sydney",
+      "airlines": [
+        "ANA",
+        "カンタス航空"
+      ],
+      "current_price": 107200,
+      "historical_avg": 91478,
+      "historical_min": 53300,
+      "historical_max": 121800,
+      "discount_vs_avg_pct": -17.2,
+      "is_deal": false,
+      "history": [
+        {
+          "month": "2024-08",
+          "price": 54100
+        },
+        {
+          "month": "2024-09",
+          "price": 54000
+        },
+        {
+          "month": "2024-10",
+          "price": 96500
+        },
+        {
+          "month": "2024-11",
+          "price": 94200
+        },
+        {
+          "month": "2024-12",
+          "price": 120000
+        },
+        {
+          "month": "2025-01",
+          "price": 121800
+        },
+        {
+          "month": "2025-02",
+          "price": 97400
+        },
+        {
+          "month": "2025-03",
+          "price": 99600
+        },
+        {
+          "month": "2025-04",
+          "price": 97500
+        },
+        {
+          "month": "2025-05",
+          "price": 97300
+        },
+        {
+          "month": "2025-06",
+          "price": 53300
+        },
+        {
+          "month": "2025-07",
+          "price": 117700
+        },
+        {
+          "month": "2025-08",
+          "price": 91900
+        },
+        {
+          "month": "2025-09",
+          "price": 90600
+        },
+        {
+          "month": "2025-10",
+          "price": 89000
+        },
+        {
+          "month": "2025-11",
+          "price": 88600
+        },
+        {
+          "month": "2025-12",
+          "price": 108200
+        },
+        {
+          "month": "2026-01",
+          "price": 106400
+        },
+        {
+          "month": "2026-02",
+          "price": 84600
+        },
+        {
+          "month": "2026-03",
+          "price": 84600
+        },
+        {
+          "month": "2026-04",
+          "price": 86200
+        },
+        {
+          "month": "2026-05",
+          "price": 85600
+        },
+        {
+          "month": "2026-06",
+          "price": 84900
+        },
+        {
+          "month": "2026-07",
+          "price": 107200
+        }
+      ]
+    },
+    {
+      "id": "NRT-SIN",
+      "region": "asia",
+      "region_label": "アジア",
+      "origin": "NRT",
+      "origin_name": "東京(成田)",
+      "dest": "SIN",
+      "dest_name": "シンガポール",
+      "dest_name_en": "Singapore",
+      "airlines": [
+        "シンガポール航空",
+        "ANA"
+      ],
+      "current_price": 87300,
+      "historical_avg": 73326,
+      "historical_min": 41100,
+      "historical_max": 90100,
+      "discount_vs_avg_pct": -19.1,
+      "is_deal": false,
+      "history": [
+        {
+          "month": "2024-08",
+          "price": 69900
+        },
+        {
+          "month": "2024-09",
+          "price": 67900
+        },
+        {
+          "month": "2024-10",
+          "price": 68400
+        },
+        {
+          "month": "2024-11",
+          "price": 66600
+        },
+        {
+          "month": "2024-12",
+          "price": 84900
+        },
+        {
+          "month": "2025-01",
+          "price": 86600
+        },
+        {
+          "month": "2025-02",
+          "price": 70800
+        },
+        {
+          "month": "2025-03",
+          "price": 72700
+        },
+        {
+          "month": "2025-04",
+          "price": 73700
+        },
+        {
+          "month": "2025-05",
+          "price": 41100
+        },
+        {
+          "month": "2025-06",
+          "price": 73300
+        },
+        {
+          "month": "2025-07",
+          "price": 90100
+        },
+        {
+          "month": "2025-08",
+          "price": 73900
+        },
+        {
+          "month": "2025-09",
+          "price": 74300
+        },
+        {
+          "month": "2025-10",
+          "price": 72400
+        },
+        {
+          "month": "2025-11",
+          "price": 72100
+        },
+        {
+          "month": "2025-12",
+          "price": 89000
+        },
+        {
+          "month": "2026-01",
+          "price": 87000
+        },
+        {
+          "month": "2026-02",
+          "price": 69700
+        },
+        {
+          "month": "2026-03",
+          "price": 71400
+        },
+        {
+          "month": "2026-04",
+          "price": 70800
+        },
+        {
+          "month": "2026-05",
+          "price": 69400
+        },
+        {
+          "month": "2026-06",
+          "price": 70500
+        },
+        {
+          "month": "2026-07",
+          "price": 87300
+        }
+      ]
+    },
+    {
+      "id": "HND-NBO",
+      "region": "africa",
+      "region_label": "アフリカ",
+      "origin": "HND",
+      "origin_name": "東京(羽田)",
+      "dest": "NBO",
+      "dest_name": "ナイロビ",
+      "dest_name_en": "Nairobi",
+      "airlines": [
+        "エチオピア航空",
+        "カタール航空"
+      ],
+      "current_price": 198000,
+      "historical_avg": 165813,
+      "historical_min": 89400,
+      "historical_max": 205600,
+      "discount_vs_avg_pct": -19.4,
+      "is_deal": false,
+      "history": [
+        {
+          "month": "2024-08",
+          "price": 196600
+        },
+        {
+          "month": "2024-09",
+          "price": 152700
+        },
+        {
+          "month": "2024-10",
+          "price": 156100
+        },
+        {
+          "month": "2024-11",
+          "price": 158100
+        },
+        {
+          "month": "2024-12",
+          "price": 201700
+        },
+        {
+          "month": "2025-01",
+          "price": 164600
+        },
+        {
+          "month": "2025-02",
+          "price": 165900
+        },
+        {
+          "month": "2025-03",
+          "price": 89400
+        },
+        {
+          "month": "2025-04",
+          "price": 157700
+        },
+        {
+          "month": "2025-05",
+          "price": 158800
+        },
+        {
+          "month": "2025-06",
+          "price": 162600
+        },
+        {
+          "month": "2025-07",
+          "price": 201800
+        },
+        {
+          "month": "2025-08",
+          "price": 205600
+        },
+        {
+          "month": "2025-09",
+          "price": 164300
+        },
+        {
+          "month": "2025-10",
+          "price": 163000
+        },
+        {
+          "month": "2025-11",
+          "price": 161300
+        },
+        {
+          "month": "2025-12",
+          "price": 199900
+        },
+        {
+          "month": "2026-01",
+          "price": 161600
+        },
+        {
+          "month": "2026-02",
+          "price": 158100
+        },
+        {
+          "month": "2026-03",
+          "price": 155900
+        },
+        {
+          "month": "2026-04",
+          "price": 159600
+        },
+        {
+          "month": "2026-05",
+          "price": 159900
+        },
+        {
+          "month": "2026-06",
+          "price": 158500
+        },
+        {
+          "month": "2026-07",
+          "price": 198000
+        }
+      ]
+    },
+    {
+      "id": "NRT-CDG",
+      "region": "europe",
+      "region_label": "欧州",
+      "origin": "NRT",
+      "origin_name": "東京(成田)",
+      "dest": "CDG",
+      "dest_name": "パリ",
+      "dest_name_en": "Paris",
+      "airlines": [
+        "ANA",
+        "エールフランス"
+      ],
+      "current_price": 178100,
+      "historical_avg": 147513,
+      "historical_min": 132900,
+      "historical_max": 182100,
+      "discount_vs_avg_pct": -20.7,
+      "is_deal": false,
+      "history": [
+        {
+          "month": "2024-08",
+          "price": 164300
+        },
+        {
+          "month": "2024-09",
+          "price": 132900
+        },
+        {
+          "month": "2024-10",
+          "price": 134600
+        },
+        {
+          "month": "2024-11",
+          "price": 133400
+        },
+        {
+          "month": "2024-12",
+          "price": 171300
+        },
+        {
+          "month": "2025-01",
+          "price": 140300
+        },
+        {
+          "month": "2025-02",
+          "price": 136700
+        },
+        {
+          "month": "2025-03",
+          "price": 138100
+        },
+        {
+          "month": "2025-04",
+          "price": 137800
+        },
+        {
+          "month": "2025-05",
+          "price": 140500
+        },
+        {
+          "month": "2025-06",
+          "price": 140400
+        },
+        {
+          "month": "2025-07",
+          "price": 174600
+        },
+        {
+          "month": "2025-08",
+          "price": 172900
+        },
+        {
+          "month": "2025-09",
+          "price": 140700
+        },
+        {
+          "month": "2025-10",
+          "price": 143200
+        },
+        {
+          "month": "2025-11",
+          "price": 142700
+        },
+        {
+          "month": "2025-12",
+          "price": 182100
+        },
+        {
+          "month": "2026-01",
+          "price": 147200
+        },
+        {
+          "month": "2026-02",
+          "price": 144200
+        },
+        {
+          "month": "2026-03",
+          "price": 140400
+        },
+        {
+          "month": "2026-04",
+          "price": 142900
+        },
+        {
+          "month": "2026-05",
+          "price": 145600
+        },
+        {
+          "month": "2026-06",
+          "price": 146000
+        },
+        {
+          "month": "2026-07",
+          "price": 178100
+        }
+      ]
+    },
+    {
+      "id": "KIX-FCO",
+      "region": "europe",
+      "region_label": "欧州",
+      "origin": "KIX",
+      "origin_name": "大阪(関西)",
+      "dest": "FCO",
+      "dest_name": "ローマ",
+      "dest_name_en": "Rome",
+      "airlines": [
+        "ANA",
+        "ITAエアウェイズ"
+      ],
+      "current_price": 157300,
+      "historical_avg": 128687,
+      "historical_min": 71500,
+      "historical_max": 172000,
+      "discount_vs_avg_pct": -22.2,
+      "is_deal": false,
+      "history": [
+        {
+          "month": "2024-08",
+          "price": 172000
+        },
+        {
+          "month": "2024-09",
+          "price": 135400
+        },
+        {
+          "month": "2024-10",
+          "price": 133400
+        },
+        {
+          "month": "2024-11",
+          "price": 133300
+        },
+        {
+          "month": "2024-12",
+          "price": 133800
+        },
+        {
+          "month": "2025-01",
+          "price": 130100
+        },
+        {
+          "month": "2025-02",
+          "price": 128800
+        },
+        {
+          "month": "2025-03",
+          "price": 71500
+        },
+        {
+          "month": "2025-04",
+          "price": 131800
+        },
+        {
+          "month": "2025-05",
+          "price": 129900
+        },
+        {
+          "month": "2025-06",
+          "price": 126700
+        },
+        {
+          "month": "2025-07",
+          "price": 159300
+        },
+        {
+          "month": "2025-08",
+          "price": 154600
+        },
+        {
+          "month": "2025-09",
+          "price": 124600
+        },
+        {
+          "month": "2025-10",
+          "price": 121800
+        },
+        {
+          "month": "2025-11",
+          "price": 123700
+        },
+        {
+          "month": "2025-12",
+          "price": 122300
+        },
+        {
+          "month": "2026-01",
+          "price": 120400
+        },
+        {
+          "month": "2026-02",
+          "price": 123200
+        },
+        {
+          "month": "2026-03",
+          "price": 119700
+        },
+        {
+          "month": "2026-04",
+          "price": 120200
+        },
+        {
+          "month": "2026-05",
+          "price": 120300
+        },
+        {
+          "month": "2026-06",
+          "price": 123000
+        },
+        {
+          "month": "2026-07",
+          "price": 157300
+        }
+      ]
+    },
+    {
+      "id": "NRT-IST",
+      "region": "middle_east",
+      "region_label": "中東",
+      "origin": "NRT",
+      "origin_name": "東京(成田)",
+      "dest": "IST",
+      "dest_name": "イスタンブール",
+      "dest_name_en": "Istanbul",
+      "airlines": [
+        "ターキッシュエアラインズ"
+      ],
+      "current_price": 142000,
+      "historical_avg": 114904,
+      "historical_min": 63400,
+      "historical_max": 151800,
+      "discount_vs_avg_pct": -23.6,
+      "is_deal": false,
+      "history": [
+        {
+          "month": "2024-08",
+          "price": 141900
+        },
+        {
+          "month": "2024-09",
+          "price": 113100
+        },
+        {
+          "month": "2024-10",
+          "price": 112800
+        },
+        {
+          "month": "2024-11",
+          "price": 115700
+        },
+        {
+          "month": "2024-12",
+          "price": 116600
+        },
+        {
+          "month": "2025-01",
+          "price": 115400
+        },
+        {
+          "month": "2025-02",
+          "price": 116600
+        },
+        {
+          "month": "2025-03",
+          "price": 115000
+        },
+        {
+          "month": "2025-04",
+          "price": 65000
+        },
+        {
+          "month": "2025-05",
+          "price": 116500
+        },
+        {
+          "month": "2025-06",
+          "price": 117000
+        },
+        {
+          "month": "2025-07",
+          "price": 149000
+        },
+        {
+          "month": "2025-08",
+          "price": 151800
+        },
+        {
+          "month": "2025-09",
+          "price": 119600
+        },
+        {
+          "month": "2025-10",
+          "price": 117600
+        },
+        {
+          "month": "2025-11",
+          "price": 117100
+        },
+        {
+          "month": "2025-12",
+          "price": 114400
+        },
+        {
+          "month": "2026-01",
+          "price": 114400
+        },
+        {
+          "month": "2026-02",
+          "price": 63400
+        },
+        {
+          "month": "2026-03",
+          "price": 112000
+        },
+        {
+          "month": "2026-04",
+          "price": 113600
+        },
+        {
+          "month": "2026-05",
+          "price": 111600
+        },
+        {
+          "month": "2026-06",
+          "price": 112700
+        },
+        {
+          "month": "2026-07",
+          "price": 142000
+        }
+      ]
+    },
+    {
+      "id": "NRT-TPE",
+      "region": "asia",
+      "region_label": "アジア",
+      "origin": "NRT",
+      "origin_name": "東京(成田)",
+      "dest": "TPE",
+      "dest_name": "台北",
+      "dest_name_en": "Taipei",
+      "airlines": [
+        "チャイナエアライン",
+        "エバー航空"
+      ],
+      "current_price": 41000,
+      "historical_avg": 32687,
+      "historical_min": 17700,
+      "historical_max": 40900,
+      "discount_vs_avg_pct": -25.4,
+      "is_deal": false,
+      "history": [
+        {
+          "month": "2024-08",
+          "price": 40600
+        },
+        {
+          "month": "2024-09",
+          "price": 32800
+        },
+        {
+          "month": "2024-10",
+          "price": 32600
+        },
+        {
+          "month": "2024-11",
+          "price": 31900
+        },
+        {
+          "month": "2024-12",
+          "price": 31800
+        },
+        {
+          "month": "2025-01",
+          "price": 40000
+        },
+        {
+          "month": "2025-02",
+          "price": 31100
+        },
+        {
+          "month": "2025-03",
+          "price": 30900
+        },
+        {
+          "month": "2025-04",
+          "price": 31600
+        },
+        {
+          "month": "2025-05",
+          "price": 32400
+        },
+        {
+          "month": "2025-06",
+          "price": 31900
+        },
+        {
+          "month": "2025-07",
+          "price": 39100
+        },
+        {
+          "month": "2025-08",
+          "price": 39600
+        },
+        {
+          "month": "2025-09",
+          "price": 32100
+        },
+        {
+          "month": "2025-10",
+          "price": 32700
+        },
+        {
+          "month": "2025-11",
+          "price": 17700
+        },
+        {
+          "month": "2025-12",
+          "price": 33000
+        },
+        {
+          "month": "2026-01",
+          "price": 40900
+        },
+        {
+          "month": "2026-02",
+          "price": 32900
+        },
+        {
+          "month": "2026-03",
+          "price": 33400
+        },
+        {
+          "month": "2026-04",
+          "price": 18000
+        },
+        {
+          "month": "2026-05",
+          "price": 32500
+        },
+        {
+          "month": "2026-06",
+          "price": 32300
+        },
+        {
+          "month": "2026-07",
+          "price": 41000
+        }
+      ]
+    },
+    {
+      "id": "HND-ICN",
+      "region": "asia",
+      "region_label": "アジア",
+      "origin": "HND",
+      "origin_name": "東京(羽田)",
+      "dest": "ICN",
+      "dest_name": "ソウル",
+      "dest_name_en": "Seoul",
+      "airlines": [
+        "大韓航空",
+        "ANA",
+        "JAL"
+      ],
+      "current_price": 38300,
+      "historical_avg": 30135,
+      "historical_min": 16200,
+      "historical_max": 38500,
+      "discount_vs_avg_pct": -27.1,
+      "is_deal": false,
+      "history": [
+        {
+          "month": "2024-08",
+          "price": 35700
+        },
+        {
+          "month": "2024-09",
+          "price": 28900
+        },
+        {
+          "month": "2024-10",
+          "price": 16200
+        },
+        {
+          "month": "2024-11",
+          "price": 30000
+        },
+        {
+          "month": "2024-12",
+          "price": 30300
+        },
+        {
+          "month": "2025-01",
+          "price": 38200
+        },
+        {
+          "month": "2025-02",
+          "price": 30600
+        },
+        {
+          "month": "2025-03",
+          "price": 30800
+        },
+        {
+          "month": "2025-04",
+          "price": 30400
+        },
+        {
+          "month": "2025-05",
+          "price": 30900
+        },
+        {
+          "month": "2025-06",
+          "price": 30300
+        },
+        {
+          "month": "2025-07",
+          "price": 20600
+        },
+        {
+          "month": "2025-08",
+          "price": 38500
+        },
+        {
+          "month": "2025-09",
+          "price": 31300
+        },
+        {
+          "month": "2025-10",
+          "price": 31100
+        },
+        {
+          "month": "2025-11",
+          "price": 31000
+        },
+        {
+          "month": "2025-12",
+          "price": 31900
+        },
+        {
+          "month": "2026-01",
+          "price": 21500
+        },
+        {
+          "month": "2026-02",
+          "price": 30500
+        },
+        {
+          "month": "2026-03",
+          "price": 30400
+        },
+        {
+          "month": "2026-04",
+          "price": 31100
+        },
+        {
+          "month": "2026-05",
+          "price": 31600
+        },
+        {
+          "month": "2026-06",
+          "price": 31300
+        },
+        {
+          "month": "2026-07",
+          "price": 38300
+        }
+      ]
+    },
+    {
+      "id": "HND-ORD",
+      "region": "north_america",
+      "region_label": "北米",
+      "origin": "HND",
+      "origin_name": "東京(羽田)",
+      "dest": "ORD",
+      "dest_name": "シカゴ",
+      "dest_name_en": "Chicago",
+      "airlines": [
+        "ANA",
+        "ユナイテッド航空"
+      ],
+      "current_price": 141400,
+      "historical_avg": 111104,
+      "historical_min": 62700,
+      "historical_max": 139700,
+      "discount_vs_avg_pct": -27.3,
+      "is_deal": false,
+      "history": [
+        {
+          "month": "2024-08",
+          "price": 80600
+        },
+        {
+          "month": "2024-09",
+          "price": 62700
+        },
+        {
+          "month": "2024-10",
+          "price": 111300
+        },
+        {
+          "month": "2024-11",
+          "price": 111700
+        },
+        {
+          "month": "2024-12",
+          "price": 139700
+        },
+        {
+          "month": "2025-01",
+          "price": 112400
+        },
+        {
+          "month": "2025-02",
+          "price": 113400
+        },
+        {
+          "month": "2025-03",
+          "price": 113700
+        },
+        {
+          "month": "2025-04",
+          "price": 112300
+        },
+        {
+          "month": "2025-05",
+          "price": 109000
+        },
+        {
+          "month": "2025-06",
+          "price": 108000
+        },
+        {
+          "month": "2025-07",
+          "price": 133000
+        },
+        {
+          "month": "2025-08",
+          "price": 132400
+        },
+        {
+          "month": "2025-09",
+          "price": 107700
+        },
+        {
+          "month": "2025-10",
+          "price": 109200
+        },
+        {
+          "month": "2025-11",
+          "price": 109200
+        },
+        {
+          "month": "2025-12",
+          "price": 134600
+        },
+        {
+          "month": "2026-01",
+          "price": 108400
+        },
+        {
+          "month": "2026-02",
+          "price": 109200
+        },
+        {
+          "month": "2026-03",
+          "price": 106400
+        },
+        {
+          "month": "2026-04",
+          "price": 107400
+        },
+        {
+          "month": "2026-05",
+          "price": 110500
+        },
+        {
+          "month": "2026-06",
+          "price": 112600
+        },
+        {
+          "month": "2026-07",
+          "price": 141400
+        }
+      ]
+    },
+    {
+      "id": "NRT-FRA",
+      "region": "europe",
+      "region_label": "欧州",
+      "origin": "NRT",
+      "origin_name": "東京(成田)",
+      "dest": "FRA",
+      "dest_name": "フランクフルト",
+      "dest_name_en": "Frankfurt",
+      "airlines": [
+        "ANA",
+        "ルフトハンザ"
+      ],
+      "current_price": 168900,
+      "historical_avg": 129996,
+      "historical_min": 73700,
+      "historical_max": 160400,
+      "discount_vs_avg_pct": -29.9,
+      "is_deal": false,
+      "history": [
+        {
+          "month": "2024-08",
+          "price": 152700
+        },
+        {
+          "month": "2024-09",
+          "price": 125300
+        },
+        {
+          "month": "2024-10",
+          "price": 123700
+        },
+        {
+          "month": "2024-11",
+          "price": 124800
+        },
+        {
+          "month": "2024-12",
+          "price": 158200
+        },
+        {
+          "month": "2025-01",
+          "price": 123700
+        },
+        {
+          "month": "2025-02",
+          "price": 126000
+        },
+        {
+          "month": "2025-03",
+          "price": 122900
+        },
+        {
+          "month": "2025-04",
+          "price": 122800
+        },
+        {
+          "month": "2025-05",
+          "price": 120800
+        },
+        {
+          "month": "2025-06",
+          "price": 119400
+        },
+        {
+          "month": "2025-07",
+          "price": 152400
+        },
+        {
+          "month": "2025-08",
+          "price": 150100
+        },
+        {
+          "month": "2025-09",
+          "price": 122800
+        },
+        {
+          "month": "2025-10",
+          "price": 124100
+        },
+        {
+          "month": "2025-11",
+          "price": 127100
+        },
+        {
+          "month": "2025-12",
+          "price": 160400
+        },
+        {
+          "month": "2026-01",
+          "price": 129700
+        },
+        {
+          "month": "2026-02",
+          "price": 128700
+        },
+        {
+          "month": "2026-03",
+          "price": 132100
+        },
+        {
+          "month": "2026-04",
+          "price": 135300
+        },
+        {
+          "month": "2026-05",
+          "price": 73700
+        },
+        {
+          "month": "2026-06",
+          "price": 133200
+        },
+        {
+          "month": "2026-07",
+          "price": 168900
+        }
+      ]
+    },
+    {
+      "id": "NRT-BCN",
+      "region": "europe",
+      "region_label": "欧州",
+      "origin": "NRT",
+      "origin_name": "東京(成田)",
+      "dest": "BCN",
+      "dest_name": "バルセロナ",
+      "dest_name_en": "Barcelona",
+      "airlines": [
+        "カタール航空",
+        "ターキッシュエアラインズ"
+      ],
+      "current_price": 190300,
+      "historical_avg": 144904,
+      "historical_min": 82800,
+      "historical_max": 180600,
+      "discount_vs_avg_pct": -31.3,
+      "is_deal": false,
+      "history": [
+        {
+          "month": "2024-08",
+          "price": 180600
+        },
+        {
+          "month": "2024-09",
+          "price": 148200
+        },
+        {
+          "month": "2024-10",
+          "price": 145000
+        },
+        {
+          "month": "2024-11",
+          "price": 142500
+        },
+        {
+          "month": "2024-12",
+          "price": 145000
+        },
+        {
+          "month": "2025-01",
+          "price": 143500
+        },
+        {
+          "month": "2025-02",
+          "price": 144300
+        },
+        {
+          "month": "2025-03",
+          "price": 142700
+        },
+        {
+          "month": "2025-04",
+          "price": 145600
+        },
+        {
+          "month": "2025-05",
+          "price": 141300
+        },
+        {
+          "month": "2025-06",
+          "price": 138700
+        },
+        {
+          "month": "2025-07",
+          "price": 173400
+        },
+        {
+          "month": "2025-08",
+          "price": 175700
+        },
+        {
+          "month": "2025-09",
+          "price": 136900
+        },
+        {
+          "month": "2025-10",
+          "price": 138700
+        },
+        {
+          "month": "2025-11",
+          "price": 139800
+        },
+        {
+          "month": "2025-12",
+          "price": 142500
+        },
+        {
+          "month": "2026-01",
+          "price": 139800
+        },
+        {
+          "month": "2026-02",
+          "price": 140400
+        },
+        {
+          "month": "2026-03",
+          "price": 143900
+        },
+        {
+          "month": "2026-04",
+          "price": 147000
+        },
+        {
+          "month": "2026-05",
+          "price": 82800
+        },
+        {
+          "month": "2026-06",
+          "price": 154500
+        },
+        {
+          "month": "2026-07",
+          "price": 190300
+        }
+      ]
+    },
+    {
+      "id": "NRT-JFK",
+      "region": "north_america",
+      "region_label": "北米",
+      "origin": "NRT",
+      "origin_name": "東京(成田)",
+      "dest": "JFK",
+      "dest_name": "ニューヨーク",
+      "dest_name_en": "New York",
+      "airlines": [
+        "ANA",
+        "JAL",
+        "デルタ航空"
+      ],
+      "current_price": 181400,
+      "historical_avg": 137626,
+      "historical_min": 69000,
+      "historical_max": 174700,
+      "discount_vs_avg_pct": -31.8,
+      "is_deal": false,
+      "history": [
+        {
+          "month": "2024-08",
+          "price": 164700
+        },
+        {
+          "month": "2024-09",
+          "price": 128800
+        },
+        {
+          "month": "2024-10",
+          "price": 132400
+        },
+        {
+          "month": "2024-11",
+          "price": 129000
+        },
+        {
+          "month": "2024-12",
+          "price": 164200
+        },
+        {
+          "month": "2025-01",
+          "price": 127900
+        },
+        {
+          "month": "2025-02",
+          "price": 69000
+        },
+        {
+          "month": "2025-03",
+          "price": 154700
+        },
+        {
+          "month": "2025-04",
+          "price": 126200
+        },
+        {
+          "month": "2025-05",
+          "price": 69800
+        },
+        {
+          "month": "2025-06",
+          "price": 129400
+        },
+        {
+          "month": "2025-07",
+          "price": 164100
+        },
+        {
+          "month": "2025-08",
+          "price": 166700
+        },
+        {
+          "month": "2025-09",
+          "price": 133600
+        },
+        {
+          "month": "2025-10",
+          "price": 130500
+        },
+        {
+          "month": "2025-11",
+          "price": 127900
+        },
+        {
+          "month": "2025-12",
+          "price": 164600
+        },
+        {
+          "month": "2026-01",
+          "price": 134700
+        },
+        {
+          "month": "2026-02",
+          "price": 135800
+        },
+        {
+          "month": "2026-03",
+          "price": 174700
+        },
+        {
+          "month": "2026-04",
+          "price": 143900
+        },
+        {
+          "month": "2026-05",
+          "price": 146700
+        },
+        {
+          "month": "2026-06",
+          "price": 146100
+        },
+        {
+          "month": "2026-07",
+          "price": 181400
+        }
+      ]
+    },
+    {
+      "id": "NRT-GRU",
+      "region": "south_america",
+      "region_label": "南米",
+      "origin": "NRT",
+      "origin_name": "東京(成田)",
+      "dest": "GRU",
+      "dest_name": "サンパウロ",
+      "dest_name_en": "Sao Paulo",
+      "airlines": [
+        "エミレーツ航空",
+        "ラタム航空"
+      ],
+      "current_price": 253200,
+      "historical_avg": 184217,
+      "historical_min": 100400,
+      "historical_max": 236600,
+      "discount_vs_avg_pct": -37.4,
+      "is_deal": false,
+      "history": [
+        {
+          "month": "2024-08",
+          "price": 171200
+        },
+        {
+          "month": "2024-09",
+          "price": 174800
+        },
+        {
+          "month": "2024-10",
+          "price": 177500
+        },
+        {
+          "month": "2024-11",
+          "price": 173900
+        },
+        {
+          "month": "2024-12",
+          "price": 222900
+        },
+        {
+          "month": "2025-01",
+          "price": 221700
+        },
+        {
+          "month": "2025-02",
+          "price": 179300
+        },
+        {
+          "month": "2025-03",
+          "price": 181400
+        },
+        {
+          "month": "2025-04",
+          "price": 100400
+        },
+        {
+          "month": "2025-05",
+          "price": 181200
+        },
+        {
+          "month": "2025-06",
+          "price": 177800
+        },
+        {
+          "month": "2025-07",
+          "price": 221700
+        },
+        {
+          "month": "2025-08",
+          "price": 172300
+        },
+        {
+          "month": "2025-09",
+          "price": 175800
+        },
+        {
+          "month": "2025-10",
+          "price": 180600
+        },
+        {
+          "month": "2025-11",
+          "price": 184100
+        },
+        {
+          "month": "2025-12",
+          "price": 229900
+        },
+        {
+          "month": "2026-01",
+          "price": 236600
+        },
+        {
+          "month": "2026-02",
+          "price": 192400
+        },
+        {
+          "month": "2026-03",
+          "price": 190900
+        },
+        {
+          "month": "2026-04",
+          "price": 188900
+        },
+        {
+          "month": "2026-05",
+          "price": 192700
+        },
+        {
+          "month": "2026-06",
+          "price": 109000
+        },
+        {
+          "month": "2026-07",
+          "price": 253200
+        }
+      ]
+    }
+  ]
+}

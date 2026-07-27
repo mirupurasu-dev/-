@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SoraDeals | 海外航空券・激安チャート</title>
+<meta name="description" content="世界各都市への航空券を過去の価格チャートと比較し、圧倒的に安いタイミングを見つけるまとめサイト">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✈️</text></svg>">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/vendor/chart.umd.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <span class="brand-icon">✈️</span>
+      <span class="brand-name">SoraDeals</span>
+    </div>
+    <p class="tagline">世界の航空券を過去チャートで比較。圧倒的に安いタイミングだけを見つける。</p>
+  </div>
+</header>
+
+<main class="container">
+  <section class="notice" id="dataNotice">
+    データ読み込み中...
+  </section>
+
+  <section class="controls">
+    <div class="search-row">
+      <input type="search" id="searchInput" placeholder="都市名・空港コードで検索 (例: バンコク, LAX)">
+      <select id="sortSelect">
+        <option value="deal">お得な順 (割引率が高い)</option>
+        <option value="price_asc">価格が安い順</option>
+        <option value="price_desc">価格が高い順</option>
+        <option value="region">地域順</option>
+      </select>
+    </div>
+    <div class="region-tabs" id="regionTabs">
+      <button class="tab active" data-region="all">すべて</button>
+    </div>
+    <label class="deal-toggle">
+      <input type="checkbox" id="dealOnly">
+      <span>激安 (過去平均比 -25%以上) だけ表示</span>
+    </label>
+  </section>
+
+  <section class="stats-strip" id="statsStrip"></section>
+
+  <section class="grid" id="routeGrid">
+    <div class="loading">読み込み中...</div>
+  </section>
+</main>
+
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal">
+    <button class="modal-close" id="modalClose" aria-label="閉じる">&times;</button>
+    <div id="modalBody"></div>
+    <div class="chart-wrap">
+      <canvas id="priceChart" height="260"></canvas>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p>本サイトは <strong>デモ用サンプルデータ</strong> を使用しています。実際の航空券価格ではありません。</p>
+  <p>実データに接続する場合は <code>data/fares.json</code> を実運賃APIの出力に差し替えてください。詳細は README を参照。</p>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
